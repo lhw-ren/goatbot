@@ -25,7 +25,7 @@ module.exports = {
 			session4: "evening",
 			leaveType1: " goodbye nigga we dunno need your ass here bitch💢😤",
 			leaveType2: "Womp Womp nigga ",
-			defaultLeaveMessage: "{userName} {type} the group"
+			defaultLeaveMessage: "{userName} {type} "
 		}
 	},
 
