@@ -25,7 +25,7 @@ module.exports = {
 
    
       if (!searchQuery.includes("-")) {
-        return api.sendMessage(`Invalid format. Example: {prefix}pin cats -5`, event.threadID, event.messageID);
+        return api.sendMessage(Invalid format. Example: {prefix}pin cats -5, event.threadID, event.messageID);
       }
 
      
@@ -38,13 +38,13 @@ module.exports = {
       }
 
    
-      const apiUrl = `https://pin-kshitiz.vercel.app/pin?search=${encodeURIComponent(query)}`;
+      const apiUrl = https://pin-two.vercel.app/pin?search=${encodeURIComponent(query)};
       const response = await axios.get(apiUrl);
       const imageData = response.data.result;
 
      
       if (!imageData || !Array.isArray(imageData) || imageData.length === 0) {
-        return api.sendMessage(`No images found for "${query}".`, event.threadID, event.messageID);
+        return api.sendMessage(No images found for "${query}"., event.threadID, event.messageID);
       }
 
     
@@ -53,7 +53,7 @@ module.exports = {
         const imageUrl = imageData[i];
         try {
           const imgResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-          const imgPath = path.join(__dirname, 'cache', `${i + 1}.jpg`);
+          const imgPath = path.join(__dirname, 'cache', ${i + 1}.jpg);
           await fs.outputFile(imgPath, imgResponse.data);
           imgData.push(fs.createReadStream(imgPath));
         } catch (error) {
@@ -68,7 +68,7 @@ module.exports = {
       }, event.threadID, event.messageID);
     } catch (error) {
       console.error(error);
-      return api.sendMessage(`An error occurred.`, event.threadID, event.messageID);
+      return api.sendMessage(An error occurred., event.threadID, event.messageID);
     }
   }
 };
