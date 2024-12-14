@@ -23,8 +23,8 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			leaveType1: " goodbye nigga we dunno need your ass here bitch💢😤",
-			leaveType2: "Womp Womp nigga ",
+			leaveType1: " goodbye bitch we dunno need your ass here 💢😤",
+			leaveType2: "Bitch Got Kicked😹😹 ",
 			defaultLeaveMessage: "{userName} {type} "
 		}
 	},
